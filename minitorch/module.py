@@ -64,7 +64,7 @@ class Module:
 
     def parameters(self) -> Sequence[Parameter]:
         "Enumerate over all the parameters of this module and its descendents."
-        result: Sequence[Parameter] = []
+        result: list[Parameter] = []
 
         for param in self._parameters.values():
             result.append(param)
