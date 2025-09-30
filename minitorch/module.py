@@ -49,7 +49,7 @@ class Module:
         Returns:
             The name and `Parameter` of each ancestor parameter.
         """
-        result: Sequence[Tuple[str, Parameter]] = []
+        result: list[Tuple[str, Parameter]] = []
 
         for name, param in self._parameters.items():
 
